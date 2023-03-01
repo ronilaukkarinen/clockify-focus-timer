@@ -1,0 +1,139 @@
+body {
+  overflow-x: hidden !important;
+}
+
+.cl-layout-aside,
+.cl-nav-link,
+.cl-top-bar .cl-navbar-toggler {
+  border-left: 0;
+}
+
+.cl-position-relative,
+.cl-sidebar-header,
+.cl-sidebar-container .cl-nav-item,
+.cl-layout-aside .cl-navbar,
+.cl-navbar,
+#sidebar-menu,
+.cl-navbar-collapse,
+.cl-sidebar-wrapper,
+.cl-navbar-container,
+.cl-navbar-container *,
+sidebar-navigation,
+sidebar-navigation *,
+.cl-navbar-expand-lg .cl-navbar-nav .cl-nav-link,
+.cl-nav-link,
+.cl-dropdown,
+[routerlink="/tracker"],
+.cl-page-wrapper,
+.cl-page-wrapper *,
+.cl-layout-main,
+.cl-layout-main * {
+  position: static !important;
+}
+
+.cl-top-bar {
+  z-index: 0;
+}
+
+body .cl-sidebar-wrapper [stopwatch-seconds] {
+  font-size: 100px !important;
+  left: 0 !important;
+  top: 0 !important;
+  background: #0d1117 !important;
+  color: #fff !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 999 !important;
+  font-weight: 500 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start;
+  font-family: system-ui, Inter !important;
+  width: 400px !important;
+  text-align: center;
+}
+
+a[routerlink="/tracker"] .cl-nav-link-copy {
+  background: #0d1117 !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  display: flex !important;
+  justify-content: center !important;
+  z-index: 9999 !important;
+}
+
+.cl-time-tracker-recorder {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  display: flex !important;
+  background: transparent !important;
+  z-index: 999999 !important;
+  width: 100vw;
+  top: 0;
+  height: 10px;
+  justify-content: center;
+}
+
+.cl-tracker-wrapper,
+.cl-time-tracker-recorder .cl-card {
+  width: 100% !important;
+  max-width: 1000px !important;
+}
+
+.cl-time-tracker-recorder .cl-card {
+  transform: translateX(0) !important;
+}
+
+.cl-time-tracker-recorder * {
+  background: transparent !important;
+  border: 0 !important;
+  font-family: system-ui, Inter !important;
+}
+
+.cl-tracker-wrapper,
+.cl-page-wrapper,
+.cl-time-tracker-recorder form,
+.cl-time-tracker-recorder div {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+input[placeholder="What are you working on?"] {
+  font-size: 22px;
+}
+
+.cl-time-tracker-recorder .cl-project-name {
+  font-size: 13px;
+}
+
+.cl-time-tracker-recorder input {
+  padding: 0;
+}
+
+.cl-time-tracker-recorder .cl-row {
+  display: grid;
+}
+
+.cl-time-tracker-recorder .cl-project-name i,
+#topbar-menu,
+.cl-time-tracker-recorder stopwatch .cl-cursor-default,
+body.dark .cl-time-tracker-recorder:before {
+  display: none !important;
+}
+
+.cl-tracker-entries-wrapper {
+  top: 100vh !important;
+  position: relative !important;
+}
+
+.cl-layout-main {
+  margin-left: 0 !important;
+}
+
+.recorder-project-wrapper {
+  max-width: 100%;
+}
